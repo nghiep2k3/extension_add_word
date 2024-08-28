@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Add",
+    "description": "Hiển thị lên màn hình website, matches: ['<all_urls>']",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "css": [
+                "main.css"
+            ],
+            "js": [
+                "index.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": [
+            "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js",
+            "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
+        ],
+        "matches": ["<all_urls>"]
+    }]
+}
